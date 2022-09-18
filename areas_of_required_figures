@@ -1,0 +1,20 @@
+import math
+N = int(input("ENTER THE INPUT"))
+if (N==1):
+    radius = int(input("enter the radius of circle"))
+    area = 3.14*(radius**2)
+    print(area)
+elif (N==2):
+    length = int(input("enter the length of rectangle"))
+    breadth = int(input("enter the breadth of rectangle"))
+    area = length*breadth
+    print(area)
+elif (N==3):
+    a = int(input("enter the length of 1st side"))
+    b = int(input("enter the length of the 2nd side"))
+    c = int(input("enter the length of the 3rd side"))
+    s = (a+b+c)/2
+    area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+    print(area)
+else:
+    print("select the correct number")
