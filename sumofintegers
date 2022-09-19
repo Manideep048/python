@@ -1,8 +1,7 @@
-
-
-n = int(input())
+n = int(input("Enter the number"))
+b =abs(n)
 add = 0
-while (n>0):
-    add = add + (n%10)
-    n = int(n/10)
+while (b>0):
+    add = add + (b%10)
+    b = int(b/10)
 print(add)
