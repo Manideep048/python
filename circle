@@ -1,12 +1,12 @@
 import math
-
 x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-r = int(input())
+r = int(input("enter the radius"))
 
 d = math.sqrt(math.pow((x2-x1),2) + math.pow((y2-y1),2))
+
 if (d==r):
     print(d)
     print("point is on the circle")
