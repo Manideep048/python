@@ -1,20 +1,31 @@
 import math
-N = int(input("ENTER THE INPUT"))
+
+print("1.Area of circle")
+print("2.Area of rectangle")
+print("3.Area of triangle")
+N = int(input("Enter your choice"))
+
 if (N==1):
-    radius = int(input("enter the radius of circle"))
-    area = 3.14*(radius**2)
+    radius = int(input("Enter the radius of the circle"))
+    x = abs(radius)
+    area = 3.14*(x**2)
     print(area)
 elif (N==2):
-    length = int(input("enter the length of rectangle"))
-    breadth = int(input("enter the breadth of rectangle"))
-    area = length*breadth
+    length = int(input("enter the length"))
+    breadth = int(input("enter the breadth"))
+    y = abs(length)
+    z = abs(breadth)
+    area = y*z
     print(area)
 elif (N==3):
-    a = int(input("enter the length of 1st side"))
-    b = int(input("enter the length of the 2nd side"))
-    c = int(input("enter the length of the 3rd side"))
-    s = (a+b+c)/2
-    area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+    a = int(input("first side of triangle"))
+    b = int(input("second side of triangle"))
+    c = int(input("third side of triangle"))
+    m = abs(a)
+    n = abs(b)
+    o = abs(c)
+    s = (m+n+o)/2
+    area = math.sqrt(s*(s-m)*(s-n)*(s-o))
     print(area)
-else:
-    print("select the correct number")
+else :
+    print("enter the correct choice")
